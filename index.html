@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <form id="form">
+      <div id="container">
+        <div class="flex">
+          <label for="day" id="d" class="">DAY</label><br>
+          <input type="number" id="day" class="" placeholder="DD"><br>
+          <span id="emptyD" class="RED  x">This field is required</span><br>
+          <span id="invalidD" class="RED a">Must be a valid day</span><br>
+        </div>
+        <div class="flex">
+          <label for="month" id="m" class="">MONTH</label><br>
+          <input type="number" id="month" class="" placeholder="MM"><br>
+          <span id="emptyM" class="RED x">This field is required</span><br>
+          <span id="invalidM" class="RED a">Must be a valid month</span><br>
+        </div>
+        <div class="flex">
+          <label for="year" id="y" class="">YEAR</label><br>
+          <input type="number" id="year" class="" placeholder="YYY"><br>
+          <span id="emptyY" class="RED x">This field is required</span><br>
+          <span id="invalidY" class="RED a">Must be in the past</span><br>
+        </div>
+      </div>
+      <div id="x">
+        <hr>
+      </div>
+      <div id="button">
+        <input type="image" src="/assets/images/icon-arrow.svg" id="submit">
+      </div>   
+    </form>
+    <div id="parent">
+      <p><span id="yrs">--</span> years</p>
+      <p><span id="mnths">--</span> months</p>
+      <p><span id="dys">--</span> days</p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "Poppins-ExtraBoldItalic";
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf),
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+/* ### Primary */
+
+:root {
+--Purple: hsl(259, 100%, 65%);
+--LightRed: hsl(0, 100%, 67%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--OffWhite: hsl(0, 0%, 94%);
+--LightGrey: hsl(0, 0%, 86%);
+--SmokeyGrey: hsl(0, 1%, 44%);
+--OffBlack: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    height: auto;
+    max-width: 100%;
+} 
+body {
+    background-color: var(--OffWhite);
+} 
+section {
+    border-radius: 20px 20px 50px 20px;
+    background: var(--White);
+    padding: 1.5rem;
+    margin: 30px;
+}
+#container {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    max-width: 100%;
+}
+form {
+    box-sizing: border-box;
+}
+#d, #m, #y {
+    font-family: "Poppins-Bold";
+}
+#day, #month, #year {
+    width: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#submit {
+    background: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    position: relative;
+    top: -25px;
+    width: 2em;
+    padding: 1em;
+}
+#x {
+    position: relative;
+    top: 20px;
+}
+#parent {
+    display: grid;
+    justify-content: center;
+    color: var(--Purple);
+    font-size: 3em;
+    font-weight: 900;
+}
+#invalidD, #invalidM, #invalidY {
+    position: relative;
+    top: -19px;
+}
+
+/* ---- for media Query ---- */
+@media screen and (min-width: 375px) {
+    section {
+        margin: 30px auto;
+    }
+    #day, #month, #year {
+        width: 120px;
+        margin-right: 10px;
+        margin-top: 5px;
+        padding: 15px 15px;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+    section {
+        width: 800px;
+        border-radius: 30px 30px 200px 30px;
+    }
+    #submit {
+        position: relative;
+        top: -45px;
+        left: 310px;
+        width: 4em;
+        padding: 2.5em;
+        font-size: 10px;
+    }    
+    .flex {
+        position: relative;
+        left: -110px;
+    }
+    #x {
+        padding: 0 30px;
+        padding-right: 50px;
+    }
+    #invalidD, #invalidM, #invalidY {
+        position: relative;
+        top: -10px;
+    }
+    #emptyD, #emptyM, #emptyY {
+        position: relative;
+        top: 10px;
+    }
+    #parent {
+        font-size: 6em;
+        font-weight: 900;
+        font-family: "Poppins-ExtraBoldItalic";
+        line-height: 120px;
+        padding: 0px 13rem 3rem 0px;
+        margin-top: -10px;
+    }
+}
+
+/*  ----- for javascript ----  */
+.RED {
+    color: red;
+}
+.x {
+    display: none;
+}
+.y {
+    display: none;
+}
+.a {
+    display: none;
+}
+.invalidColor {
+    color: red;
+}
+.normalColor {
+    color: black;
+}
+.invalidBorderColor {
+    border-color: red;
+}
+.normalBorderColor {
+    border-color: black;
+}
+.labelColor {
+    color: red;
+}
+.labelBdrColor {
+    border-color: red;
+}
+.dsplyEmptyEr {
+    display: inline-block;
+}
+.erClr {
+    color: red;
+}
+.erBdrClr {
+    border-color: red;
+}
